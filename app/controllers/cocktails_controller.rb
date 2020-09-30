@@ -1,4 +1,6 @@
 class CocktailsController < ApplicationController
+
+  before_action :authenticate_user!
   def index
     @cocktails = Cocktail.all
   end
