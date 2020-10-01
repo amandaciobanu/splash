@@ -3,6 +3,12 @@ class CocktailsController < ApplicationController
   before_action :authenticate_user!
   def index
     @cocktails = Cocktail.all
+    @search = params["search"]
+
+    if @search.present?
+      @name = @search["name"]
+      @cocktails = Cocktail.where("name ILIKE ?", "%#{@name}%")
+    end
   end
 
   def show

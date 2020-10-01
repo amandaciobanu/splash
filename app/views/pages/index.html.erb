@@ -1,7 +1,7 @@
 <section class="banner">
   <div class="container">
     <div class="row justify-content-center">
-      <div class="col-7">
+      <div class="col-lg-7  col-md-10 col-sm-10">
         <h2>Thirsty?</h2>
         <h4>Find a cocktail or add your favorite!</h4>
         <%= simple_form_for :search, url: root_path, method: :get do |f| %>
@@ -16,3 +16,8 @@
     </div>
   </div>
 </section>
+
+<p>I’m a big fan of this technique to make Sass talk to JavaScript. Because we declare breakpoints as a multidimensional list with their names as keys, exporting them in bulk to JavaScript becomes really straightforward and can be done automatically with just a few lines of code.
+  I’m not trying to put down other people’s solutions and I’m definitely not saying this one is better. I mentioned them to show some of the obstacles I found along the way to my ideal solution, as well as some great things they introduced that inspired my own solution.
+  You might have some concerns about the length and complexity of this implementation. While I understand, the idea behind it is that you download one single file, @import it into your project and start using it without having to touch the source code. Ping me on Twitter though if you have any questions.
+  You can get it from GitHub and you are very welcome to contribute with issues/code/love. I’m sure there’s still a lot we can do to make it better.</p>

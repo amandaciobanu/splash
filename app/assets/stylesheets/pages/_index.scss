@@ -1,2 +1,4 @@
 // Import page-specific CSS files here.
 @import "home";
+
+$breakpoints: (small: 320px, custom: 420 px, medium: 768px, large: 1024px);
