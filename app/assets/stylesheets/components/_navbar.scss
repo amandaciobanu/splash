@@ -1,6 +1,11 @@
-.nav-link{
+nav-link{
   font-size: 1.2rem;
+
 }
 .navbar-white{
-  background-color: #ffffff;
+  background-color: darkgrey;
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-brand {
+  color: pink;
 }

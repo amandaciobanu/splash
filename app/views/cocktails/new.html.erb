@@ -1,13 +1,18 @@
 <div class="container">
   <div class="row justify-content-center">
-    <div class="col-md-8">
-      <h1>Create a new cocktail</h1>
+    <div class="col-lg-6 col-md-10 col-sm-8">
+      <div class="container-forms">
+        <h2>Create a new cocktail</h2>
 
-      <%= simple_form_for @cocktail do |f| %>
-        <%= f.input :name %>
-        <%= f.input :photo, as: :file %>
-        <%= f.button :submit, class: 'btn btn-primary' %>
-      <% end %>
+        <%= simple_form_for @cocktail do |f| %>
+          <%= f.input :name %>
+          <%= f.input :photo, as: :file %>
+
+          <div class="form-actions btn-forms">
+            <%= f.button :submit, "Create Cocktail", class: "btn-forms"%>
+          </div>
+        <% end %>
+      </div>
     </div>
   </div>
 </div>
