@@ -1,21 +1,22 @@
 .banner {
   position: relative;
   min-height: 100vh;
-  background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('banner-splash.jpg') center 80% no-repeat;
+  width: 100%;
+  background-size: contain;
+
+  background-position-y: top;
+  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url('inversed.jpg')  60% no-repeat;
   padding: 250px 0 200px 0;
   transition: 0.5s background-color ease;
 
   h2 {
     margin: 0;
     padding: 0;
-    font-size: 2.2em;
-    color: $light_green;
-    text-transform: uppercase;
+    font-size: 3.5em;
+    color: $white;
     letter-spacing: 8px;
     font-family: $headers-font;
-    font-weight: 500;
-    text-align: center;
+    font-weight: 700;
 
     h4 {
       color: $light-gray;
@@ -39,9 +40,7 @@
 }
 
 @media(min-width: 360px) and (max-width: 420px) {
-  .banner h2{
+  .banner h2 {
     font-size: 2.2rem;
-  }.banner h4{
-       font-size: 1rem;
-     }
+  }
 }

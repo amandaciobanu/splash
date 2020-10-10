@@ -7,7 +7,9 @@ nav-link{
 }
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
-  color: #DC143C;
+ color: white;
+  text-transform: uppercase;
+  font-weight: 700;
 }
 
 @media (max-width: 991px){
