@@ -3,7 +3,7 @@ Rails.application.routes.draw do
       confirmations: 'confirmations'
   }
   root to: "pages#index"
-  resources :cocktails, only: [:index, :show, :new, :create] do
+  resources :cocktails, only: [:index, :new, :create, :show] do
     resources :doses, only: [:create]
   end
   resources :doses, only: [:destroy]

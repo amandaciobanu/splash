@@ -7,7 +7,7 @@ class CocktailsController < ApplicationController
 
     if @search.present?
       @name = @search["name"]
-      @cocktails = Cocktail.where("name ILIKE ?", "%#{@name}%")
+      @cocktails = Cocktail.where("name LIKE ?", "%#{@name}%")
     end
   end
 
