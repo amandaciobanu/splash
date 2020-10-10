@@ -8,6 +8,7 @@ Rails.application.configure do
       :authentication => :plain,
   }
   ActionMailer::Base.delivery_method = :smtp
+  config.action_mailer.default_url_options = { host: "https://splah-amandaciobanu.herokuapp.com/" }
 
   # Settings specified here will take precedence over those in config/application.rb.
 
