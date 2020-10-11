@@ -1,6 +1,6 @@
 class CocktailsController < ApplicationController
 
-  skip_before_action :authenticate_user!, only: [ :index, :show ]
+  before_action :authenticate_user!, except: %i[index show]
   def index
     @cocktails = Cocktail.all
     @search = params["search"]

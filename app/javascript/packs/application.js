@@ -21,12 +21,17 @@ require("channels")
 
 // External imports
 import "bootstrap";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 // Internal imports, e.g:
 import { initUpdateNavbarOnScroll } from '../components/_navbar';
 
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
-    initUpdateNavbarOnScroll()
+    initUpdateNavbarOnScroll();
+    console.log('lala')
+    AOS.init();
+    console.log('bubu')
 
 });

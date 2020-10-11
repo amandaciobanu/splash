@@ -1,5 +1,5 @@
 nav-link{
-  font-size: 1.2rem;
+  font-size: 2.2em;
 
 }
 .navbar-white{
@@ -7,9 +7,12 @@ nav-link{
 }
 .navbar-light .navbar-nav .nav-link,
 .navbar-light .navbar-brand {
- color: white;
+ color: #7DC909;
   text-transform: uppercase;
   font-weight: 700;
+  font-size: 1.2em;
+  padding: 0.5em;
+  margin: 0 1em 0 1em;
 }
 
 @media (max-width: 991px){
