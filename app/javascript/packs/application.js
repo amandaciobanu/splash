@@ -30,8 +30,6 @@ import { initUpdateNavbarOnScroll } from '../components/_navbar';
 document.addEventListener('turbolinks:load', () => {
   // Call your functions here, e.g:
     initUpdateNavbarOnScroll();
-    console.log('lala')
     AOS.init();
-    console.log('bubu')
 
 });
